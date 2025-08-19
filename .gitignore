@@ -1,0 +1,13 @@
+# Ignore all logs
+logs/
+*.log
+
+# Ignore build/output artifacts
+output/
+setup/*.sh
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.bak
+.DS_Store
