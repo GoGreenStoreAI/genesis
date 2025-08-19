@@ -1,1 +1,0 @@
-# GodAI Genesis core package
