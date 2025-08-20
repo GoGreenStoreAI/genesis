@@ -1,24 +1,41 @@
-name: AutoPage Daily Build
-
+name: 🌙 Nightly AutoPage
 on:
   schedule:
-    - cron: "0 0 * * *"   # Every day at midnight UTC
-  workflow_dispatch:       # Allow manual trigger
+    - cron: "0 0 * * *"   # midnight UTC daily
+  workflow_dispatch:
+
+permissions:
+  pages: write
+  id-token: write
+  contents: write
 
 jobs:
-  build:
+  nightly:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Generate homepage
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+      - name: Generate homepage & post
         run: |
           chmod +x autopage.sh
           ./autopage.sh
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Commit updated output (feed & post)
+        run: |
+          git config user.name  "Genesis Bot"
+          git config user.email "bot@gogreenstore.ai"
+          git add output
+          git commit -m "Nightly autopage $(date -u +"%Y-%m-%d %H:%M UTC")" || echo "No changes"
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          branch: main
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./output
+  deploy:
+    needs: nightly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v4

@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Go Green Store 🌱</title>
+  <title>GoGreenStoreAI 🌱</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f4fff4; }
-    h1 { color: #2e7d32; }
-    p { color: #444; }
-    footer { margin-top: 50px; font-size: 0.9em; color: #888; }
+    body { font-family: Arial, sans-serif; text-align: center; padding: 48px; background:#f6fff6 }
+    h1 { color:#2e7d32; margin-bottom: 8px }
+    p { color:#333 }
+    footer { margin-top:40px; color:#777; font-size: 0.9em }
+    a.btn { display:inline-block; padding:10px 16px; border:1px solid #2e7d32; border-radius:10px; text-decoration:none; margin-top:16px }
   </style>
 </head>
 <body>
-  <h1>Welcome to GoGreenStoreAI 🌍</h1>
-  <p>🚀 AI-powered eco-friendly marketplace.</p>
-  <p>🌱 Auto-generated on <strong>Tuesday, 19 August 2025 19:59:47</strong></p>
+  <h1>GoGreenStoreAI 🌍</h1>
+  <p>AI-powered eco-friendly marketplace</p>
+  <p id="dt"></p>
+  <a class="btn" href="./blog/">Latest posts</a>
   <footer>Powered by GodAI Genesis · © 2025 GoGreenStoreAI</footer>
+  <script>document.getElementById('dt').textContent = "Last updated: " + new Date().toString();</script>
 </body>
 </html>
