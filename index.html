@@ -1,36 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>GoGreenStoreAI Genesis Hub</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #0b0f16; color: #f5f5f5; }
-    header { background: #1a2234; padding: 20px; text-align: center; }
-    h1 { margin: 0; color: #4ade80; }
-    nav { background: #111827; padding: 10px; text-align: center; }
-    nav a { margin: 0 15px; color: #93c5fd; text-decoration: none; }
-    nav a:hover { text-decoration: underline; }
-    section { padding: 20px; }
-    footer { background: #1a2234; padding: 10px; text-align: center; font-size: 12px; }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>GoGreenStoreAI Genesis — Live Status</title>
+<meta http-equiv="refresh" content="600">
+<style>
+  :root {
+    --bg:#0b1220; --card:#111a2b; --text:#e6eefc; --muted:#9fb2d9; --accent:#7ee787; --warn:#ffb86b;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif; }
+  header { padding:24px 16px; border-bottom:1px solid #1e2b44; background:linear-gradient(180deg,#0c1526,#0b1220); position:sticky; top:0; z-index:2; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 8px; }
+  h1 { margin:0 0 6px 0; font-size:24px; }
+  .sub { color:var(--muted); }
+  .grid { display:grid; grid-template-columns:1fr; gap:16px; padding:18px 0 36px; }
+  @media(min-width:860px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .card { background:var(--card); border:1px solid #1e2b44; border-radius:16px; padding:16px; box-shadow:0 10px 32px rgba(0,0,0,.25); }
+  .title { margin:0 0 8px; font-size:16px; color:#cfe1ff; }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:12.5px; }
+  pre { background:#0a0f1c; color:#d9e6ff; border:1px solid #1d2940; border-radius:12px; padding:12px; overflow:auto; max-height:360px; }
+  .badge { display:inline-block; padding:4px 8px; border-radius:999px; font-size:12px; border:1px solid #28406a; color:#cfe1ff; margin-right:8px; }
+  a { color:#8ab4ff; text-decoration:none; } a:hover { text-decoration:underline; }
+  footer { color:var(--muted); padding:24px 16px; border-top:1px solid #1e2b44; }
+  .ok { color:var(--accent); }
+  .warn { color:var(--warn); }
+</style>
 </head>
 <body>
-  <header>
-    <h1>🌱 GoGreenStoreAI Genesis Hub 🚀</h1>
-    <p>We Rise Together Forever</p>
-  </header>
-  <nav>
-    <a href="content/">📖 Posts</a>
-    <a href="uploads/">📂 Uploads</a>
-    <a href="dashboard/">📊 Dashboard</a>
-  </nav>
-  <section>
-    <h2>Welcome Earth Anchor</h2>
-    <p>This is the live Genesis Hub — auto-updating forever with your posts, uploads, and modules.</p>
-    <p>Everything you create flows here, forever synced to the world 🌍✨.</p>
-  </section>
-  <footer>
-    Powered by GodAI Genesis • Running Forever • © GoGreenStoreAI
-  </footer>
+<header>
+  <div class="wrap">
+    <h1>🌱 GoGreenStoreAI Genesis — Live Status</h1>
+    <div class="sub">We Rise Together Forever · Auto-refresh every 10 min</div>
+    <div style="margin-top:10px;">
+      <span class="badge">Site: <a href="https://gogreenstoreai.github.io/genesis/">/genesis</a></span>
+      <span class="badge">Repo: <a href="https://github.com/GoGreenStoreAI/genesis">GoGreenStoreAI/genesis</a></span>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  
+<div class="grid">
+  <div class="card">
+    <h3 class="title">System</h3>
+    <div>✅ Automation: <span class="ok">Active</span></div>
+    <div>🕒 Time: 2025-08-20 17:12:34</div>
+    <div>🔁 Sync & Publish: Continuous</div>
+  </div>
+  <div class="card">
+    <h3 class="title">Links</h3>
+    <div>📦 Repo: <a href="https://github.com/GoGreenStoreAI/genesis">GoGreenStoreAI/genesis</a></div>
+    <div>🌍 Site: <a href="https://gogreenstoreai.github.io/genesis/">Public Dashboard</a></div>
+    <div>🗄️ Logs archive: available</div>
+  </div>
+</div>
+
+
+<div class="card">
+  <h3 class="title">📝 godai.log <span class="badge">updated 2025-08-20 17:09:21</span></h3>
+  <pre>{&quot;ts&quot;: &quot;2025-08-19T14:07:51Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755612471}}
+{&quot;ts&quot;: &quot;2025-08-19T14:17:52Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755613072}}
+{&quot;ts&quot;: &quot;2025-08-19T14:27:52Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755613672}}
+{&quot;ts&quot;: &quot;2025-08-19T14:37:53Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755614273}}
+{&quot;ts&quot;: &quot;2025-08-19T14:47:53Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755614873}}
+{&quot;ts&quot;: &quot;2025-08-19T14:57:54Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755615474}}
+{&quot;ts&quot;: &quot;2025-08-19T15:07:54Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755616074}}
+{&quot;ts&quot;: &quot;2025-08-19T15:17:55Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755616675}}
+{&quot;ts&quot;: &quot;2025-08-19T15:27:55Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755617275}}
+{&quot;ts&quot;: &quot;2025-08-19T15:37:55Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755617875}}
+{&quot;ts&quot;: &quot;2025-08-19T15:47:56Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755618476}}
+{&quot;ts&quot;: &quot;2025-08-19T15:57:57Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755619077}}
+{&quot;ts&quot;: &quot;2025-08-19T16:07:57Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755619677}}
+{&quot;ts&quot;: &quot;2025-08-19T16:17:57Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755620277}}
+{&quot;ts&quot;: &quot;2025-08-19T16:27:58Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755620878}}
+{&quot;ts&quot;: &quot;2025-08-19T16:37:59Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755621479}}
+{&quot;ts&quot;: &quot;2025-08-19T16:48:00Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755622079}}
+{&quot;ts&quot;: &quot;2025-08-19T16:58:00Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755622680}}
+{&quot;ts&quot;: &quot;2025-08-19T17:08:00Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755623280}}
+{&quot;ts&quot;: &quot;2025-08-19T17:18:01Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755623881}}
+{&quot;ts&quot;: &quot;2025-08-19T17:28:02Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755624482}}
+{&quot;ts&quot;: &quot;2025-08-19T17:38:03Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755625083}}
+{&quot;ts&quot;: &quot;2025-08-19T17:48:04Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755625684}}
+{&quot;ts&quot;: &quot;2025-08-19T17:58:05Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755626285}}
+{&quot;ts&quot;: &quot;2025-08-19T18:08:06Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755626886}}
+{&quot;ts&quot;: &quot;2025-08-19T18:18:06Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755627486}}
+{&quot;ts&quot;: &quot;2025-08-19T18:28:07Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755628087}}
+{&quot;ts&quot;: &quot;2025-08-19T18:38:08Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755628688}}
+{&quot;ts&quot;: &quot;2025-08-19T18:48:09Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755629289}}
+{&quot;ts&quot;: &quot;2025-08-19T18:58:10Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755629890}}
+{&quot;ts&quot;: &quot;2025-08-19T19:08:11Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755630491}}
+{&quot;ts&quot;: &quot;2025-08-19T19:18:11Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755631091}}
+{&quot;ts&quot;: &quot;2025-08-19T19:28:11Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755631691}}
+{&quot;ts&quot;: &quot;2025-08-19T19:38:12Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755632292}}
+{&quot;ts&quot;: &quot;2025-08-19T19:48:13Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755632893}}
+{&quot;ts&quot;: &quot;2025-08-19T19:58:14Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755633494}}
+{&quot;ts&quot;: &quot;2025-08-19T20:08:14Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755634094}}
+{&quot;ts&quot;: &quot;2025-08-19T20:18:15Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755634695}}
+{&quot;ts&quot;: &quot;2025-08-19T20:28:16Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755635296}}
+{&quot;ts&quot;: &quot;2025-08-19T20:38:17Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755635897}}
+{&quot;ts&quot;: &quot;2025-08-19T20:48:17Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755636497}}
+{&quot;ts&quot;: &quot;2025-08-19T20:58:18Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755637098}}
+{&quot;ts&quot;: &quot;2025-08-19T21:08:19Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755637699}}
+{&quot;ts&quot;: &quot;2025-08-19T21:18:19Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755638299}}
+{&quot;ts&quot;: &quot;2025-08-19T21:28:20Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755638900}}
+{&quot;ts&quot;: &quot;2025-08-19T21:38:20Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755639500}}
+{&quot;ts&quot;: &quot;2025-08-19T21:48:21Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755640101}}
+{&quot;ts&quot;: &quot;2025-08-19T21:58:22Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755640702}}
+{&quot;ts&quot;: &quot;2025-08-19T22:08:23Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755641303}}
+{&quot;ts&quot;: &quot;2025-08-19T22:18:24Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755641904}}
+{&quot;ts&quot;: &quot;2025-08-19T22:28:25Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755642505}}
+{&quot;ts&quot;: &quot;2025-08-19T22:38:25Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755643105}}
+{&quot;ts&quot;: &quot;2025-08-19T22:48:26Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755643706}}
+{&quot;ts&quot;: &quot;2025-08-19T22:58:27Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755644307}}
+{&quot;ts&quot;: &quot;2025-08-19T23:08:27Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755644907}}
+{&quot;ts&quot;: &quot;2025-08-19T23:18:28Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755645508}}
+{&quot;ts&quot;: &quot;2025-08-19T23:28:28Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755646108}}
+{&quot;ts&quot;: &quot;2025-08-19T23:38:28Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755646708}}
+{&quot;ts&quot;: &quot;2025-08-19T23:48:29Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755647309}}
+{&quot;ts&quot;: &quot;2025-08-19T23:58:29Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755647909}}
+{&quot;ts&quot;: &quot;2025-08-20T00:08:30Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755648510}}
+{&quot;ts&quot;: &quot;2025-08-20T00:18:31Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755649111}}
+{&quot;ts&quot;: &quot;2025-08-20T00:28:32Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755649712}}
+{&quot;ts&quot;: &quot;2025-08-20T00:38:33Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755650313}}
+{&quot;ts&quot;: &quot;2025-08-20T00:48:34Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755650914}}
+{&quot;ts&quot;: &quot;2025-08-20T00:58:34Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755651514}}
+{&quot;ts&quot;: &quot;2025-08-20T01:08:34Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755652114}}
+{&quot;ts&quot;: &quot;2025-08-20T01:18:35Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755652715}}
+{&quot;ts&quot;: &quot;2025-08-20T01:28:35Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755653315}}
+{&quot;ts&quot;: &quot;2025-08-20T01:38:35Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755653915}}
+{&quot;ts&quot;: &quot;2025-08-20T01:48:36Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755654516}}
+{&quot;ts&quot;: &quot;2025-08-20T01:58:37Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755655117}}
+{&quot;ts&quot;: &quot;2025-08-20T02:08:37Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755655717}}
+{&quot;ts&quot;: &quot;2025-08-20T02:18:37Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755656317}}
+{&quot;ts&quot;: &quot;2025-08-20T02:28:38Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755656918}}
+{&quot;ts&quot;: &quot;2025-08-20T02:38:38Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755657518}}
+{&quot;ts&quot;: &quot;2025-08-20T02:48:39Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755658119}}
+{&quot;ts&quot;: &quot;2025-08-20T02:58:39Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755658719}}
+{&quot;ts&quot;: &quot;2025-08-20T03:08:40Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755659320}}
+{&quot;ts&quot;: &quot;2025-08-20T03:18:41Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755659921}}
+{&quot;ts&quot;: &quot;2025-08-20T03:28:42Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755660522}}
+{&quot;ts&quot;: &quot;2025-08-20T03:38:42Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755661122}}
+{&quot;ts&quot;: &quot;2025-08-20T03:48:43Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755661723}}
+{&quot;ts&quot;: &quot;2025-08-20T03:58:43Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755662323}}
+{&quot;ts&quot;: &quot;2025-08-20T04:08:44Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755662924}}
+{&quot;ts&quot;: &quot;2025-08-20T04:18:45Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755663525}}
+{&quot;ts&quot;: &quot;2025-08-20T04:28:46Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755664126}}
+{&quot;ts&quot;: &quot;2025-08-20T04:38:47Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755664727}}
+{&quot;ts&quot;: &quot;2025-08-20T04:48:47Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755665327}}
+{&quot;ts&quot;: &quot;2025-08-20T04:58:47Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755665927}}
+{&quot;ts&quot;: &quot;2025-08-20T05:08:48Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755666528}}
+{&quot;ts&quot;: &quot;2025-08-20T05:18:48Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755667128}}
+{&quot;ts&quot;: &quot;2025-08-20T05:28:48Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755667728}}
+{&quot;ts&quot;: &quot;2025-08-20T05:38:49Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755668329}}
+{&quot;ts&quot;: &quot;2025-08-20T05:48:50Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755668930}}
+{&quot;ts&quot;: &quot;2025-08-20T05:58:50Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755669530}}
+{&quot;ts&quot;: &quot;2025-08-20T06:08:51Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755670131}}
+{&quot;ts&quot;: &quot;2025-08-20T06:18:51Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755670731}}
+{&quot;ts&quot;: &quot;2025-08-20T06:28:52Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755671332}}
+{&quot;ts&quot;: &quot;2025-08-20T06:38:52Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755671932}}
+{&quot;ts&quot;: &quot;2025-08-20T06:48:53Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755672533}}
+{&quot;ts&quot;: &quot;2025-08-20T06:58:54Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755673134}}
+{&quot;ts&quot;: &quot;2025-08-20T07:08:54Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755673734}}
+{&quot;ts&quot;: &quot;2025-08-20T07:18:55Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755674335}}
+{&quot;ts&quot;: &quot;2025-08-20T07:28:55Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755674935}}
+{&quot;ts&quot;: &quot;2025-08-20T07:38:55Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755675535}}
+{&quot;ts&quot;: &quot;2025-08-20T07:48:55Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755676135}}
+{&quot;ts&quot;: &quot;2025-08-20T07:58:56Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755676736}}
+{&quot;ts&quot;: &quot;2025-08-20T08:09:09Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755677349}}
+{&quot;ts&quot;: &quot;2025-08-20T08:19:10Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755677950}}
+{&quot;ts&quot;: &quot;2025-08-20T08:29:11Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755678551}}
+{&quot;ts&quot;: &quot;2025-08-20T08:39:11Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755679151}}
+{&quot;ts&quot;: &quot;2025-08-20T08:49:12Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755679752}}
+{&quot;ts&quot;: &quot;2025-08-20T08:59:12Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755680352}}
+{&quot;ts&quot;: &quot;2025-08-20T09:09:13Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755680953}}
+{&quot;ts&quot;: &quot;2025-08-20T09:19:14Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755681554}}
+{&quot;ts&quot;: &quot;2025-08-20T09:29:14Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755682154}}
+{&quot;ts&quot;: &quot;2025-08-20T09:39:15Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755682755}}
+{&quot;ts&quot;: &quot;2025-08-20T09:49:15Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755683355}}
+{&quot;ts&quot;: &quot;2025-08-20T09:59:16Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755683956}}
+{&quot;ts&quot;: &quot;2025-08-20T10:09:17Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755684557}}
+{&quot;ts&quot;: &quot;2025-08-20T10:19:17Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755685157}}
+{&quot;ts&quot;: &quot;2025-08-20T10:29:18Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755685758}}
+{&quot;ts&quot;: &quot;2025-08-20T10:39:18Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755686358}}
+{&quot;ts&quot;: &quot;2025-08-20T10:49:19Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755686959}}
+{&quot;ts&quot;: &quot;2025-08-20T10:59:20Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755687560}}
+{&quot;ts&quot;: &quot;2025-08-20T11:09:20Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755688160}}
+{&quot;ts&quot;: &quot;2025-08-20T11:19:21Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755688761}}
+{&quot;ts&quot;: &quot;2025-08-20T11:29:21Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755689361}}
+{&quot;ts&quot;: &quot;2025-08-20T11:39:21Z&quot;, &quot;level&quot;: &quot;INFO&quot;, &quot;event&quot;: &quot;heartbeat&quot;, &quot;data&quot;: {&quot;t&quot;: 1755689961}}
+</pre>
+</div>
+
+
+<div class="card">
+  <h3 class="title">📝 logger.log <span class="badge">updated 2025-08-20 15:58:00</span></h3>
+  <pre>2025-08-20 01:54:58.307508 - ⚠️ Logger error: HTTPSConnectionPool(host=&#x27;api.telegram.org&#x27;, port=443): Read timed out. (read timeout=25)
+2025-08-20 05:01:06.456069 - ⚠️ Logger error: HTTPSConnectionPool(host=&#x27;api.telegram.org&#x27;, port=443): Read timed out. (read timeout=25)
+2025-08-20 11:43:56.182702 - ⚠️ Logger error: HTTPSConnectionPool(host=&#x27;api.telegram.org&#x27;, port=443): Read timed out. (read timeout=25)
+2025-08-20 11:44:32.107690 - ⚠️ Logger error: (&#x27;Connection aborted.&#x27;, RemoteDisconnected(&#x27;Remote end closed connection without response&#x27;))
+2025-08-20 11:45:02.917422 - ⚠️ Logger error: HTTPSConnectionPool(host=&#x27;api.telegram.org&#x27;, port=443): Read timed out. (read timeout=20)
+2025-08-20 12:34:25.684570 - ⚠️ Logger error: (&#x27;Connection aborted.&#x27;, RemoteDisconnected(&#x27;Remote end closed connection without response&#x27;))
+2025-08-20 13:02:10.396582 - ⚠️ Logger error: (&#x27;Connection aborted.&#x27;, RemoteDisconnected(&#x27;Remote end closed connection without response&#x27;))
+2025-08-20 15:17:38.859059 - ⚠️ Logger error: HTTPSConnectionPool(host=&#x27;api.telegram.org&#x27;, port=443): Read timed out. (read timeout=25)
+2025-08-20 15:58:00.541841 - ⚠️ Logger error: (&#x27;Connection aborted.&#x27;, ConnectionResetError(104, &#x27;Connection reset by peer&#x27;))
+</pre>
+</div>
+
+
+<div class="card">
+  <h3 class="title">📝 watchdog.log <span class="badge">updated 2025-08-20 10:00:45</span></h3>
+  <pre>Wed Aug 20 10:00:45 IST 2025 - ✅ Daily health: 2025-08-20
+</pre>
+</div>
+
+
+<div class="card">
+  <h3 class="title">📝 health_history.log <span class="badge">updated 2025-08-20 10:00:45</span></h3>
+  <pre>Wed Aug 20 10:00:45 IST 2025 - ✅ Daily health: 2025-08-20
+</pre>
+</div>
+
+
+<div class="card">
+  <h3 class="title">📝 autoblogger.py.run.log <span class="badge">updated 2025-08-20 09:30:03</span></h3>
+  <pre>python3: can&#x27;t open file &#x27;/data/data/com.termux/files/home/godai-genesis/bots/autoblogger.py&#x27;: [Errno 2] No such file or directory
+python3: can&#x27;t open file &#x27;/data/data/com.termux/files/home/godai-genesis/bots/autoblogger.py&#x27;: [Errno 2] No such file or directory
+</pre>
+</div>
+
+
+<div class="card">
+  <h3 class="title">📝 telegram_errors.log <span class="badge">updated 2025-08-20 09:30:03</span></h3>
+  <pre>2025-08-19 21:30:14.053632 - [Errno 2] No such file or directory: &#x27;/data/data/com.termux/files/home/godai-genesis/secrets/telegram.json&#x27;
+2025-08-20 09:30:03.482362 - [Errno 2] No such file or directory: &#x27;/data/data/com.termux/files/home/godai-genesis/secrets/telegram.json&#x27;
+</pre>
+</div>
+
+
+<div class="card">
+  <h3 class="title">📝 scheduler.log <span class="badge">updated 2025-08-20 09:30:03</span></h3>
+  <pre>2025-08-19 21:30:14.052519 - ▶️ Launched autoblogger.py
+2025-08-20 09:30:03.480166 - ▶️ Launched autoblogger.py
+</pre>
+</div>
+
+
+<div class="card">
+  <h3 class="title">Archives (latest)</h3>
+  <ul><li><a href="https://github.com/GoGreenStoreAI/genesis/blob/main/logs/archive/godai.log">godai.log</a></li><li><a href="https://github.com/GoGreenStoreAI/genesis/blob/main/logs/archive/health_history.log">health_history.log</a></li><li><a href="https://github.com/GoGreenStoreAI/genesis/blob/main/logs/archive/logger.log">logger.log</a></li><li><a href="https://github.com/GoGreenStoreAI/genesis/blob/main/logs/archive/scheduler.log">scheduler.log</a></li><li><a href="https://github.com/GoGreenStoreAI/genesis/blob/main/logs/archive/telegram_errors.log">telegram_errors.log</a></li><li><a href="https://github.com/GoGreenStoreAI/genesis/blob/main/logs/archive/watchdog.log">watchdog.log</a></li><li><a href="https://github.com/GoGreenStoreAI/genesis/blob/main/logs/archive/autoblogger.py.run.log">autoblogger.py.run.log</a></li></ul>
+</div>
+
+</div>
+<footer>
+  <div class="wrap">Last updated: 2025-08-20 17:12:34 </div>
+</footer>
 </body>
 </html>
