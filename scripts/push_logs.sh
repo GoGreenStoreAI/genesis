@@ -1,13 +1,8 @@
 #!/bin/bash
-cd ~/godai-genesis || exit
-
-# Copy logs into a versioned folder
+set -e
+cd ~/godai-genesis || exit 1
 mkdir -p logs/archive
-cp logs/*.log logs/archive/ 2>/dev/null
-
-# Stage and commit logs
-git add logs/*
-git commit -m "Auto-log update $(date)" || echo "No new logs"
-
-# Push safely
-git push || echo "Push failed"
+cp logs/*.log logs/archive/ 2>/dev/null || true
+git add logs/* || true
+git commit -m "Auto-log update $(date +"%Y-%m-%d %H:%M:%S %Z")" || true
+git push || echo "[push_logs] push failed"

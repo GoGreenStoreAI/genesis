@@ -2,20 +2,22 @@
 set -e
 cd ~/godai-genesis || exit 1
 
-# 1) Build dashboard (never fail the pipeline if Python fails)
-python3 scripts/gen_status.py || echo "[warn] gen_status.py failed, continuing"
+# Stage everything (including newly created files)
+git add -A || true
 
-# 2) Stage everything (including updated index.html)
-git add -A
+# Commit with timestamp if there are changes
+git diff --cached --quiet || git commit -m "Auto-update Genesis Hub $(date +"%Y-%m-%d %H:%M:%S %Z")"
 
-# 3) Commit with timestamp (ignore no-change error)
-git commit -m "Auto-update Genesis Hub $(date '+%Y-%m-%d %H:%M:%S %Z')" || echo "No changes to commit"
-
-# 4) Ensure tracking
+# Ensure we're tracking origin/main
 git branch --set-upstream-to=origin/main main 2>/dev/null || true
 
-# 5) Pull safely
-git pull --rebase || echo "[warn] rebase failed, continuing"
+# Pull safely with rebase, falling back to stash if needed
+if ! git pull --rebase; then
+  echo "[auto_sync] rebase conflict -> stash"
+  git stash push -u -m "autosync-$(date +%s)" || true
+  git pull --rebase || true
+  git stash pop || true
+fi
 
-# 6) Push
-git push || echo "[warn] push failed (will retry next loop)"
+# Push with two tries
+git push || { echo "[auto_sync] first push failed; retrying..."; sleep 5; git push || echo "[auto_sync] push failed, will try next loop"; }

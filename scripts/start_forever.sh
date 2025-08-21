@@ -2,12 +2,17 @@
 set -e
 cd ~/godai-genesis || exit 1
 
-# Kill existing sessions if any
-tmux has-session -t godai-sync 2>/dev/null && tmux kill-session -t godai-sync || true
-tmux has-session -t godai-logs 2>/dev/null && tmux kill-session -t godai-logs || true
+# create tmux sessions if not exist
+new_if_absent () {
+  local name="$1" cmd="$2"
+  tmux has-session -t "$name" 2>/dev/null || tmux new-session -d -s "$name" "$cmd"
+}
 
-# Sync loop: regenerate + push every 5 minutes
-tmux new-session -d -s godai-sync "while true; do ~/godai-genesis/scripts/auto_sync.sh; sleep 300; done"
+# continuous sync every 5 min
+new_if_absent godai-sync 'while true; do ~/godai-genesis/scripts/auto_sync.sh; sleep 300; done'
 
-# Logs loop: snapshot & push logs every 30 minutes
-tmux new-session -d -s godai-logs "while true; do ~/godai-genesis/scripts/push_logs.sh; sleep 1800; done"
+# hourly heartbeat (via loop to avoid relying on cron alone)
+new_if_absent godai-heart 'while true; do python3 ~/godai-genesis/scripts/heartbeat.py; sleep 3600; done'
+
+# log pusher every 2h
+new_if_absent godai-logs 'while true; do ~/godai-genesis/scripts/push_logs.sh; sleep 7200; done'
