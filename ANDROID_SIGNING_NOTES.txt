@@ -1,0 +1,10 @@
+To publish a signed release you'll need:
+  - A Java keystore (.keystore or .jks) and password
+  - Configure signing in cordova/app Gradle or use apksigner
+  - Add secrets to GitHub Actions to sign and upload:
+      ANDROID_KEYSTORE (base64 or stored in Actions secret as file),
+      ANDROID_KEYSTORE_PASSWORD,
+      ANDROID_KEY_ALIAS,
+      ANDROID_KEY_PASSWORD
+
+The Action above will produce an unsigned release APK and upload it to workflow artifacts.
