@@ -1,0 +1,21 @@
+name: Mirror to GitLab
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    if: ${{ secrets.GITLAB_URL && secrets.GITLAB_TOKEN }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Push to GitLab
+        env:
+          GITLAB_URL: ${{ secrets.GITLAB_URL }}   # e.g. https://gitlab.com/GoGreenStoreAI/genesis.git
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+          git config user.name "Genesis Bot"
+          git config user.email "genesis-bot@noreply.local"
+          git remote add gitlab "https://oauth2:${GITLAB_TOKEN}@${GITLAB_URL#https://}"
+          git push gitlab HEAD:main -f
