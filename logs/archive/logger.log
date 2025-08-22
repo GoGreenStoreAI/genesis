@@ -10,3 +10,5 @@
 2025-08-21 05:02:45.243848 - ⚠️ Logger error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
 2025-08-21 10:26:21.206038 - ⚠️ Logger error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 2025-08-21 13:36:37.227603 - ⚠️ Logger error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2025-08-21 14:32:44.089759 - ⚠️ Logger error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-21 14:32:51.395800 - ⚠️ Logger error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7612771363:AAEkid-B5OPl4F_dZ7llSJmsgWyQaqsYFi4/getUpdates?offset=1&timeout=20 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x75477dc290>: Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
