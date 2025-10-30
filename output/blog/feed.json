@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "url": "./post-2025-10-30_00-57-45.html",
+      "title": "Daily Update 2025-10-30_00-57-45",
+      "date": "Thursday, 30 October 2025 00:57:45 UTC"
+    },
+    {
       "url": "./post-2025-10-29_00-58-13.html",
       "title": "Daily Update 2025-10-29_00-58-13",
       "date": "Wednesday, 29 October 2025 00:58:13 UTC"
@@ -244,11 +249,6 @@
       "url": "./post-2025-09-11_00-53-31.html",
       "title": "Daily Update 2025-09-11_00-53-31",
       "date": "Thursday, 11 September 2025 00:53:31 UTC"
-    },
-    {
-      "url": "./post-2025-09-10_00-52-22.html",
-      "title": "Daily Update 2025-09-10_00-52-22",
-      "date": "Wednesday, 10 September 2025 00:52:22 UTC"
     }
   ]
 }
