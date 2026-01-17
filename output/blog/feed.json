@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "url": "./post-2026-01-17_01-00-07.html",
+      "title": "Daily Update 2026-01-17_01-00-07",
+      "date": "Saturday, 17 January 2026 01:00:07 UTC"
+    },
+    {
       "url": "./post-2026-01-16_01-03-00.html",
       "title": "Daily Update 2026-01-16_01-03-00",
       "date": "Friday, 16 January 2026 01:03:00 UTC"
@@ -244,11 +249,6 @@
       "url": "./post-2025-11-29_00-55-41.html",
       "title": "Daily Update 2025-11-29_00-55-41",
       "date": "Saturday, 29 November 2025 00:55:41 UTC"
-    },
-    {
-      "url": "./post-2025-11-28_00-55-20.html",
-      "title": "Daily Update 2025-11-28_00-55-20",
-      "date": "Friday, 28 November 2025 00:55:20 UTC"
     }
   ]
 }
